@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_left {
+    flex-grow: 1;
+    flex-basis: 50%;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+      font-size: 120px;
+      line-height: 0.8;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  &_right {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 50%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0587/3801/6450/files/rewards-page-hero-mobile-bg_750x.png?v=1632417972);
+    background-size: cover;
+    img {
+      max-width: 720px;
+      max-height: 780px;
+      object-fit: cover;
+    }
+  }
+}
+.brand {
+  background: #2dccd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 50px;
+  img {
+    filter: brightness(20%);
+    height: 40px;
+    width: 150px;
+  }
+}

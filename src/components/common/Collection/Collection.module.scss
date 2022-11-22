@@ -1,0 +1,25 @@
+@mixin img--main($background) {
+  background: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 70% 60%;
+  border-bottom-right-radius: 70% 60%;
+  padding: 50px 0;
+}
+.collection {
+  padding-top: 50px;
+  background-color: #e0eabc;
+  img {
+    width: 420px;
+  }
+  .img_1 {
+    @include img--main(#f0c4b2);
+    border-radius: 70% 0% 60% 0% / 60% 0% 70% 0%;
+  }
+  .img_2 {
+    @include img--main(#c7f4f8);
+    border-radius: 0% 60% 0% 70% / 0% 70% 0% 60%;
+  }
+}

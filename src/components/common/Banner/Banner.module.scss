@@ -1,0 +1,46 @@
+$text-color: #1a243d;
+
+.banner {
+  font-weight: bold;
+  height: 30px;
+  color: $text-color;
+  background: linear-gradient(to right, #ffd100, #f9423a);
+  background-size: 200% 200%;
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 30% 0%;
+  }
+  50% {
+    background-position: 41% 30%;
+  }
+  100% {
+    background-position: 30% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}

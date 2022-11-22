@@ -1,0 +1,44 @@
+.products {
+  background: #fff4eb;
+  padding: 55px;
+}
+.card_main {
+  background: #fff4eb !important;
+  border: none !important;
+  outline: none !important;
+  text-align: center !important;
+}
+@mixin symbolPref($background, $color) {
+  width: 140px;
+  height: 140px;
+  padding: 25px;
+  background-color: $background;
+  border-radius: 50%;
+  color: $color;
+  cursor: pointer;
+}
+.symbolContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: lighter;
+  gap: 100px;
+  .symbol:first-child {
+    @include symbolPref(#f9423a, white);
+  }
+  .symbol:nth-child(2) {
+    @include symbolPref(#ffd100, #5e4d00);
+  }
+  .symbol:nth-child(3) {
+    @include symbolPref(#002e5d, #fff);
+  }
+  .symbol:nth-child(4) {
+    @include symbolPref(#2dccd3, #5e4d00);
+  }
+  .symbol:nth-child(5) {
+    @include symbolPref(#84329b, #b9f2ff);
+  }
+}
